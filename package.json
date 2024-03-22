@@ -1,0 +1,63 @@
+{
+  "name": "delenitivoluptas",
+  "version": "1.0.0",
+  "description": "This is a monorepo for various libraries.",
+  "packageManager": "yarn@3.2.0",
+  "engines": {
+    "node": ">=v16.14.2",
+    "yarn": ">=3.2.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.2.4",
+    "@commitlint/config-conventional": "^16.2.4",
+    "@types/express": "^4.17.13",
+    "@types/jest": "27.5.0",
+    "@types/node": "^16.11.33",
+    "@types/prettier": "^2.6.0",
+    "@types/validator": "^13.7.2",
+    "@typescript-eslint/eslint-plugin": "^5.22.0",
+    "@typescript-eslint/parser": "^5.22.0",
+    "eslint": "^8.14.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-node": "^0.3.6",
+    "eslint-import-resolver-typescript": "^2.7.1",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.1.5",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-ordered-imports": "^0.6.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-unicorn": "^42.0.0",
+    "husky": "^7.0.4",
+    "jest": "^28.0.3",
+    "jest-mock": "^28.0.2",
+    "lint-staged": "^12.4.1",
+    "logform": "^2.4.0",
+    "markdownlint-cli": "^0.31.1",
+    "prettier": "^2.6.2",
+    "pretty-quick": "^3.1.3",
+    "rimraf": "^3.0.2",
+    "run-script-webpack-plugin": "^0.0.11",
+    "ts-jest": "^28.0.1",
+    "typescript": "^4.6.4",
+    "winston-transport": "^4.5.0"
+  },
+  "lint-staged": {
+    "**/*.md": [
+      "yarn lint:markdown"
+    ]
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "author": "TheodoraLubowitz",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AnitaBeatty/delenitivoluptas.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AnitaBeatty/delenitivoluptas.git/issues"
+  },
+  "homepage": "https://github.com/AnitaBeatty/delenitivoluptas.git"
+}
